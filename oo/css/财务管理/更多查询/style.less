@@ -1,0 +1,107 @@
+@import url("reset.css");
+//封装宽高背景色
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+//封装弹性盒
+.box(@ver:horizontal) {
+    display: -webkit-box;     //将当前对象转换为弹性盒 
+    -webkit-box-orient: @ver; //控制子元素排列方向
+}
+html {
+    font-size: 62.5%; 
+}
+html,body{
+    .full(100%,100%,#fff);
+}
+.wrapper{
+    .full(100%,100%,#f7f7f7);
+    .box(vertical);
+    header{
+        .full(100%,4rem,none);
+        .box(horizontal);
+        border-bottom: 1px solid #bfbfbf;
+        line-height: 4rem;
+        .left{
+            .full(24px,auto,none);
+            text-align: center;
+            img{
+                .full(12px,auto,none);
+            }
+        }
+        .center{
+            -webkit-box-flex: 1;
+            font-size: 15px;
+            text-align: center;
+        }
+        .right{
+            .full(30px,auto,none);
+            text-align: center;
+            img{
+                .full(20px,auto,none);
+            }
+            
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        overflow-y: auto;
+        &::-webkit-scrollbar{width: 0;};
+        margin-top: 2px;
+        .uls{
+            .box(horizontal);
+            .full(100%,3.5rem,#fff);
+            li{
+                -webkit-box-flex: 1;
+                text-align: center;
+                border-right: 1px solid #cccccc;
+                line-height: 3.5rem;
+                position: relative;
+                span{
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    border: 4px solid transparent;
+                    border-top: 4px solid #999999;
+                    margin-left: 3px;
+                }
+                dl{
+                    .full(100%,auto,#fff);
+                    border: 1px solid #d9d9d9;
+                    dt{
+                        height: 3rem;
+                        border-bottom: 1px solid #d9d9d9;
+                    }
+                }
+            }
+            .active{
+                color: #ff7f1d;
+                border-bottom: 1px solid #FF7F1D;
+                dl{
+                    color: black;
+                }
+            }
+        }
+        .sales{
+            margin-top: 8px;
+            .full(100%,5rem,#fff);
+            padding: 0 8px;
+            box-sizing: border-box;
+            .div1{
+                padding: 5px 0;
+                box-sizing: border-box;
+            }
+            .p1{
+                float: left;
+                span{
+                    color: #888bc6;
+                }
+            }
+            .p2{
+                float: right;
+            }
+        }
+    }
+}

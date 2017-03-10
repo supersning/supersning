@@ -1,0 +1,105 @@
+@import url("reset.css");
+//封装宽高背景色
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+//封装弹性盒
+.box(@ver:horizontal) {
+    display: -webkit-box;     //将当前对象转换为弹性盒 
+    -webkit-box-orient: @ver; //控制子元素排列方向
+}
+html {
+    font-size: 62.5%; 
+}
+html,body{
+    .full(100%,100%,#fff);
+}
+.wrapper{
+    .full(100%,100%,none);
+    .box(vertical);
+    header{
+        .full(100%,4rem,#ff7f1d);
+        .box(horizontal);
+        border-bottom: 1px solid #bfbfbf;
+        line-height: 4rem;
+        .left{
+            .full(24px,auto,none);
+            text-align: center;
+            img{
+                .full(12px,auto,none);
+            }
+        }
+        .center{
+            -webkit-box-flex: 1;
+            font-size: 15px;
+            text-align: center;
+            color: #fff;
+        }
+        .right{
+            .full(30px,auto,none);
+            text-align: center;
+            img{
+                .full(20px,auto,none);
+            }
+            
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        position: relative;
+        //账户余额
+        .account{
+            text-align: center;
+            h1{
+                font-size: 14px;
+                color: #666666;
+                margin-top: 4rem;
+            }
+            .p1{
+                font-size: 15px;
+                color: #FF7F1D;
+                margin-top: 15px;
+            }
+            .p2{
+                color: #666666;
+            }
+            .p3{
+                span{
+                    color: #FF7F1D;
+                }
+            }
+            .p4{
+                margin-top: 3rem;
+                .btn1{
+                    display: inline-block;
+                    .full(70px,30px,#ff7f1d);
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    color: #fff;
+                    font-size: 15px;
+                    margin-right: 30px;
+                }
+                .btn2{
+                    display: inline-block;
+                    .full(70px,30px,none);
+                    border: 1px solid #b1b1b1;
+                    outline: none;
+                    border-radius: 10px;
+                    color: #ff7f1d;
+                    font-size: 15px;
+                }
+            }
+        }
+        .more{
+            color: #ffa571;
+            border: 1px solid #ffa571;
+            .full(50px,20px,none);
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+    }
+}
