@@ -1,0 +1,113 @@
+@import url("reset.css");
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrapper header {
+  width: 100%;
+  height: 4rem;
+  background: #ff7f1d;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #bfbfbf;
+  line-height: 4rem;
+}
+.wrapper header .left {
+  width: 24px;
+  height: auto;
+  background: none;
+  text-align: center;
+}
+.wrapper header .left img {
+  width: 12px;
+  height: auto;
+  background: none;
+}
+.wrapper header .center {
+  -webkit-box-flex: 1;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+.wrapper header .right {
+  width: 30px;
+  height: auto;
+  background: none;
+  text-align: center;
+}
+.wrapper header .right img {
+  width: 20px;
+  height: auto;
+  background: none;
+}
+.wrapper section {
+  -webkit-box-flex: 1;
+  position: relative;
+}
+.wrapper section .account {
+  text-align: center;
+}
+.wrapper section .account h1 {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 4rem;
+}
+.wrapper section .account .p1 {
+  font-size: 15px;
+  color: #FF7F1D;
+  margin-top: 15px;
+}
+.wrapper section .account .p2 {
+  color: #666666;
+}
+.wrapper section .account .p3 span {
+  color: #FF7F1D;
+}
+.wrapper section .account .p4 {
+  margin-top: 3rem;
+}
+.wrapper section .account .p4 .btn1 {
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  background: #ff7f1d;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  margin-right: 30px;
+}
+.wrapper section .account .p4 .btn2 {
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  background: none;
+  border: 1px solid #b1b1b1;
+  outline: none;
+  border-radius: 10px;
+  color: #ff7f1d;
+  font-size: 15px;
+}
+.wrapper section .more {
+  color: #ffa571;
+  border: 1px solid #ffa571;
+  width: 50px;
+  height: 20px;
+  background: none;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}

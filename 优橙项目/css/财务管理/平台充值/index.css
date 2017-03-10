@@ -1,0 +1,85 @@
+@import url("reset.css");
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrapper header {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #bfbfbf;
+  line-height: 4rem;
+}
+.wrapper header .left {
+  width: 24px;
+  height: auto;
+  background: none;
+  text-align: center;
+}
+.wrapper header .left img {
+  width: 12px;
+  height: auto;
+  background: none;
+}
+.wrapper header .center {
+  -webkit-box-flex: 1;
+  font-size: 15px;
+  text-align: center;
+}
+.wrapper header .right {
+  width: 30px;
+  height: auto;
+  background: none;
+  text-align: center;
+}
+.wrapper header .right img {
+  width: 20px;
+  height: auto;
+  background: none;
+}
+.wrapper section {
+  -webkit-box-flex: 1;
+}
+.wrapper section input {
+  width: 100%;
+  height: 2.5rem;
+  background: #ffffff;
+  margin-top: 5px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 2.5rem;
+  color: #666666;
+  outline: none;
+  border: none;
+}
+.wrapper section .submit {
+  margin-top: 2rem;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.wrapper section .submit button {
+  display: inline-block;
+  width: 100%;
+  height: 3rem;
+  background: #ff7f1d;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+}
